@@ -1,7 +1,8 @@
 import config from "../config.json";
-import styled from "styled-components";
 import { CSSReset } from "../src/components/CSSReset";
 import Menu from "../src/components/Menu";
+import Header from "../src/components/Header";
+import Favorites from "../src/components/Favorites";
 import { StyledTimeline } from "../src/components/Timeline";
 
 function HomePage() {
@@ -13,8 +14,9 @@ function HomePage() {
             
             <div>
                 <Menu />
-                <Header />
+                <Header account={config.account} />
                 <Timeline playlists={config.playlists} />
+                <Favorites favorites={config.favorites} />
             </div>
             
         </>
@@ -22,48 +24,6 @@ function HomePage() {
 }
 
 export default HomePage
-
-
-const StyledHeader = styled.div`
-    img.banner {
-    }
-    
-    .user-info {
-        margin-top: 50px;
-        display: flex;
-        align-items: center;
-        width: 100%;
-        padding: 16px 32px;
-        gap: 16px;
-    }
-
-    .user-info img {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-    }
-`;
-function Header() {
-
-    return (
-        <StyledHeader>
-            {/*<img className="banner" src="banner" />*/}
-
-            <section className="user-info">
-                <img src={`https://github.com/${config.github}.png`} />
-                <div>
-                    <h2>
-                        {config.name}
-                    </h2>
-
-                    <p>
-                        {config.job}
-                    </p>
-                </div>
-            </section>
-        </StyledHeader>
-    )
-}
 
 
 function Timeline(props) {
@@ -75,13 +35,13 @@ function Timeline(props) {
                 {playlistsNames.map((playlistsName) => {
                     const videos = props.playlists[playlistsName];
                     return (
-                        <section>
+                        <section key={playlistsName}>
                             <h2>{playlistsName}</h2>
                             <div>
                                 {
                                     videos.map((video) => {
                                         return (
-                                            <a href={video.url}>
+                                            <a href={video.url} key={video.title} target="blank">
                                                 <img src={video.thumb} />
                                                 <span>
                                                     {video.title}

@@ -1,14 +1,11 @@
 {
-    "name": "Diogo Fontes",
-    "job": "Front-End Developer",
-    "github": "DiogoFontes",
+    "account": {
+        "name": "Diogo Fontes",
+        "job": "Front-End Developer",
+        "github": "DiogoFontes"
+    },
     "playlists": {
         "jogos": [
-            {
-                "title": "Frostpunk - Neve e Steak tartare",
-                "url": "https://www.youtube.com/watch?v=QsqatJxAUtk",
-                "thumb": "https://img.youtube.com/vi/QsqatJxAUtk/hqdefault.jpg"
-            },
             {
                 "title": "Frostpunk - Neve e Steak tartare",
                 "url": "https://www.youtube.com/watch?v=O8jtAyPuhNg",
@@ -46,11 +43,6 @@
             }
         ],
         "front-end": [
-            {
-                "title": "Jogo com JavaScript #01: Criando um Flappy Bird do ZERO!!!",
-                "url": "https://youtube.com/watch?v=jOAU81jdi-c",
-                "thumb": "https://img.youtube.com/vi/jOAU81jdi-c/hqdefault.jpg"
-            },
             {
                 "title": "Jogo com JavaScript #01: Criando um Flappy Bird do ZERO!!!",
                 "url": "https://www.youtube.com/watch?v=llF6vD-RljE",
@@ -95,11 +87,6 @@
         "back-end": [
             {
                 "title": "Node JS: Construindo CRUDs com file system focando em serialização e JSON",
-                "url": "https://www.youtube.com/watch?v=dvd3pNYh7So",
-                "thumb": "https://img.youtube.com/vi/dvd3pNYh7So/hqdefault.jpg"
-            },
-            {
-                "title": "Node JS: Construindo CRUDs com file system focando em serialização e JSON",
                 "url": "https://www.youtube.com/watch?v=8q36rNS5yVo",
                 "thumb": "https://img.youtube.com/vi/8q36rNS5yVo/hqdefault.jpg"
             },
@@ -129,5 +116,37 @@
                 "thumb": "https://img.youtube.com/vi/0JWMVc1CqpA/hqdefault.jpg"
             }
         ]
-    }
+    },
+    "favorites": [
+        {
+            "account": "@peas",
+            "url": "https://github.com/peas",
+            "thumb": "https://github.com/peas.png"
+        },
+        {
+            "account": "@omariosouto",
+            "url": "https://www.youtube.com/channel/UCzR2u5RWXWjUh7CwLSvbitA",
+            "thumb": "https://yt3.ggpht.com/m8Yrqf0Y81L4mZ1Cq7rGnJ4NDHe6729rxiFZvWyy9-xd_Z7Osmza7J8NWpN1axMHcCb1oKJNgA=s176-c-k-c0x00ffffff-no-rj"
+        },
+        {
+            "account": "@nayannebatista",
+            "url": "https://github.com/NayanneBatista",
+            "thumb": "https://github.com/NayanneBatista.png"
+        },
+        {
+            "account": "@alura",
+            "url": "https://www.youtube.com/c/Alura",
+            "thumb": "https://yt3.ggpht.com/xqhIoXspeX7eqouJvNHl1xqpv9213Pl26ENZbuouXxO2RlDadjsveNXfgnj8GTUk7thFYUkVRg=s176-c-k-c0x00ffffff-no-rj"
+        },
+        {
+            "account": "@jovemnerd",
+            "url": "https://www.youtube.com/c/JovemNerd",
+            "thumb": "https://yt3.ggpht.com/ytc/AMLnZu9pDOp93R9V0cp_CodoiMk8FM60-46FkdDasQ1i=s176-c-k-c0x00ffffff-no-rj"
+        },
+        {
+            "account": "@mrg",
+            "url": "https://www.youtube.com/user/matandorobosgigantes",
+            "thumb": "https://yt3.ggpht.com/ytc/AMLnZu_oJLARWvLutr9pQtuzBqMhOpv5cQVTLUjXg4-R=s176-c-k-c0x00ffffff-no-rj"
+        }
+    ]
 }
